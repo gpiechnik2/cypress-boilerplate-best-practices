@@ -86,11 +86,12 @@ Cypress.Commands.add('useSession', (sessionName) => {
         }
     }
 });
-
-    Role Initialization: Each role (e.g., free or premium) is set up through the cy.session() function.
-    Session Caching: The cacheAcrossSpecs: true option ensures that sessions persist across multiple spec files, optimizing test runtime.
-    Validation: Custom validation ensures that a session is still valid before reuse, avoiding stale states.
 ```
+
+- Role Initialization: Each role (e.g., free or premium) is set up through the cy.session() function.
+- Session Caching: The cacheAcrossSpecs: true option ensures that sessions persist across multiple spec files, optimizing test runtime.
+- Validation: Custom validation ensures that a session is still valid before reuse, avoiding stale states.
+
 
 ### Step 2: Setting Up Sessions in the before Hook
 
@@ -157,7 +158,7 @@ Efficient Testing: Sessions eliminate the need to repeatedly log in or set up us
 
 2. Session Isolation:
     
-    Always clear cookies, local storage, and session storage in the before or after hooks to ensure session isolation.
+    Always clear cookies, local storage, and session storage in the before hooks to ensure session isolation.
 
 3. Validation Logic:
     
