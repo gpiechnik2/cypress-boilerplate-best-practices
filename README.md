@@ -27,7 +27,7 @@ To set up the repository, follow these steps:
 1. Clone the repository
 
 ```bash
-git clone .
+git clone https://github.com/gpiechnik2/cypress-boilerplate-best-practices
 ```
 
 2. Install
