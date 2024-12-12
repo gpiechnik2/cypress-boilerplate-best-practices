@@ -1,0 +1,29 @@
+{
+  "name": "cypress-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "cy:open:stage": "cypress open --env environment=stage",
+    "cy:run:stage": "cypress run --env environment=stage",
+    "cy:run:stage:smoke": "cypress run --env environment=stage --env grepTags='@smoke'",
+    "cy:run:stage:medium": "cypress run --env environment=stage --env grepTags='@medium'",
+    "cy:run:stage:low": "cypress run --env environment=stage --env grepTags='@low'",
+    "format": "prettier --write 'cypress/**/*.ts'",
+    "lint": "eslint 'cypress/**/*.ts' --fix"
+  },
+  "author": "Grzegorz Piechnik",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@bahmutov/cy-grep": "^1.11.6",
+    "@faker-js/faker": "^9.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+    "@typescript-eslint/parser": "^8.17.0",
+    "cypress": "^13.16.1",
+    "eslint": "^9.16.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2"
+  }
+}
